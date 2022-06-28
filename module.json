@@ -1,6 +1,6 @@
 {
-	"name": "monks-tokenbar",
-	"title": "Monk's TokenBar",
+	"name": "monks-tokenbar-dcc",
+	"title": "Monk's TokenBar with DCC Support",
 	"description": "Add a bar with all the current player tokens.  Limit movement, roll saving throws, assign XP.",
 	"version": "1.0.67",
 	"minimumCoreVersion": "9",
