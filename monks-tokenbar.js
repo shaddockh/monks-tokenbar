@@ -19,7 +19,7 @@ import { SFRPGRolls } from "./systems/sfrpg-rolls.js";
 import { SwadeRolls } from "./systems/swade-rolls.js";
 import { SW5eRolls } from "./systems/sw5e-rolls.js";
 import { CoC7Rolls } from "./systems/coc7-rolls.js";
-
+import { DCCRolls } from "./systems/dcc-rolls.js";
 export let debug = (...args) => {
     if (MonksTokenBar.debugEnabled > 1) console.log("DEBUG: monks-tokenbar | ", ...args);
 };
@@ -724,6 +724,8 @@ Hooks.on("setup", () => {
             MonksTokenBar.system = new SwadeRolls(); break;
         case 'coc7':
             MonksTokenBar.system = new CoC7Rolls(); break;
+        case 'dcc':
+            MonksTokenBar.system = new DCCRolls(); break;
     }
 
     MonksTokenBar.system.constructor.activateHooks();
